@@ -1,0 +1,30 @@
+{
+  "name": "oracle-black-arena",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n API,WEB -c cyan,green \"node --experimental-strip-types server/index.ts\" \"vite --host 0.0.0.0 --port 8080\"",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "start": "node --experimental-strip-types server/index.ts",
+    "smoke": "node scripts/browser-smoke.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.510.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "concurrently": "^9.1.2",
+    "playwright": "^1.52.0",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.8.2",
+    "vite": "^6.3.2"
+  }
+}

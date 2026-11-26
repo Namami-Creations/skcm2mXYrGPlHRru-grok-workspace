@@ -1,0 +1,8 @@
+node_modules/
+dist/
+screenshots/
+.vite/
+*.log
+data/*.sqlite-wal
+data/*.sqlite-shm
+.DS_Store
